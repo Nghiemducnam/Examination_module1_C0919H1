@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr1 = [12,6,3,7,21,5,7];
+        let arr2 = [12,6,3,7,21,5,7];
+        let arr3 = [12,6,3,7,21,5,7];
+        let arr4 = [12,6,3,4,21,5,7];
+        function tryRemoveFromArray(a, b) {
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] == b) {
+                    for (let j = i; j < a.length; j++) {
+                        a[j] = a [j + 1];
+                    }   a.pop();
+                }
+            }
+        }
+        tryRemoveFromArray(arr1,2);
+            document.write(arr1 + '<br>');
+        tryRemoveFromArray(arr2,12);
+            document.write(arr2 + "<br>");
+        tryRemoveFromArray(arr3,7);
+            document.write(arr3 + '<br>');
+        tryRemoveFromArray(arr4,7);
+            document.write(arr4 + '<br>');
+    </script>
+
+</body>
+</html>

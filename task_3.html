@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function printFibonacci(limit) {
+            let a = 1;
+            let b = 1;
+            let c;
+            document.write(a + " " + b + " ");
+            for (let count = 0; count < limit; count++) {
+                c = a + b;
+                a = b;
+                b = c;
+                if( c < limit) {
+                    document.write( c + " ");
+                }
+            }
+        }
+        printFibonacci(12);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let arr1 = [10,5,2,8,-1,6,8];
+         let arr2 = [2,4,0,5,1];
+         let arr3 = [-8,-6,-2,-6,-1,-1,-4];
+         function findMaxScore(a) {
+            let max = a[0];
+            for(let i =1; i< a.length; i++) {
+                if( a[i] > max) {
+                    max = a[i]
+                }
+            } document.write("số có giá trị lớn nhất trong mảng là: " + max + '<br>');
+         }
+         findMaxScore(arr1);
+         findMaxScore(arr2);
+         findMaxScore(arr3);
+
+     </script>
+
+</body>
+</html>
